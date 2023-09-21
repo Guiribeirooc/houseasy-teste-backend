@@ -1,5 +1,10 @@
+using HouseasyFront.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.ConfigureServices();
+builder.Services.ConfigurarAPI(builder.Configuration);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

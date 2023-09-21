@@ -7,7 +7,7 @@ namespace HouseasyFront.Extensions
     public static class ExtensionService
     {
 
-        public static void ConfigurarServicos(this IServiceCollection services)
+        public static void ConfigureServices(this IServiceCollection services)
         {
             services.AddHttpClient();
             services.AddScoped<IApiToken, ApiToken>();
