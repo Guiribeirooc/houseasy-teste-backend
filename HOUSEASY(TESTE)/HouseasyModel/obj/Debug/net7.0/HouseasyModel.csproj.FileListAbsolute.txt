@@ -12,3 +12,17 @@ C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\HOUSEASY(TESTE)\Housea
 C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.pdb
 C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.genruntimeconfig.cache
 C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\ref\HouseasyModel.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\bin\Debug\net7.0\HouseasyModel.deps.json
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\bin\Debug\net7.0\HouseasyModel.runtimeconfig.json
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\bin\Debug\net7.0\HouseasyModel.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\bin\Debug\net7.0\HouseasyModel.pdb
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\refint\HouseasyModel.dll
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.pdb
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\HouseasyModel.genruntimeconfig.cache
+C:\Users\guilh\OneDrive\Área de Trabalho\TESTE HOUSEAYSY\houseasy-teste-backend\HOUSEASY(TESTE)\HouseasyModel\obj\Debug\net7.0\ref\HouseasyModel.dll

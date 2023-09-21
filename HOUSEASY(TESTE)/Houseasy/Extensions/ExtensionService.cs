@@ -1,5 +1,6 @@
 ﻿using HouseasyCommon.Model;
 using HouseasyCommon.Service;
+using HouseasyModel.DTO;
 
 namespace HouseasyFront.Extensions
 {
@@ -10,12 +11,12 @@ namespace HouseasyFront.Extensions
         {
             services.AddHttpClient();
             services.AddScoped<IApiToken, ApiToken>();
-            services.AddScoped<ResponseLogin>();
+            services.AddScoped<LoginResponse>();
         }
 
         public static void ConfigurarAPI(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<Database>(configuration.GetSection("DadosBase"));
+            services.Configure<Database>(configuration.GetSection("Database"));
         }
 
     }

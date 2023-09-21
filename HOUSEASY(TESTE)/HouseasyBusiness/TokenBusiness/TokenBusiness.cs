@@ -7,15 +7,15 @@ namespace HouseasyBusiness.TokenBusiness
 {
     public class TokenBusiness : ITokenBusiness
     {
-        private readonly string _secret;
+        private readonly string _secreto;
         public TokenBusiness()
         {
-            _secret = Environment.GetEnvironmentVariable("JWT_SECRETO");
+            _secreto = Environment.GetEnvironmentVariable("JWT_SECRETO");
         }
-        public async Task<LoginResponse> GerarToken(LoginResponse loginResponse)
+        public async Task<LoginResponse> GenerateToken(LoginResponse loginResponse)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Convert.FromBase64String(_secret);
+            var key = Convert.FromBase64String(_secreto);
 
             var claimsIdendity = new ClaimsIdentity(new[]
             {

@@ -4,9 +4,9 @@ namespace HouseasyBusiness.UserBusiness
 {
     public interface IUserBusiness
     {
-        Task Incluir(User user);
-        Task<User> ObterPorCPF(string cpf);
-        Task<List<User>> ObterLista();
-        Task Alterar(User cliente);
+        Task IncludeUser(User user);
+        Task<User> GetByCPF(string cpf);
+        Task<List<User>> GetList();
+        Task UpdateUser(User cliente);
     }
 }

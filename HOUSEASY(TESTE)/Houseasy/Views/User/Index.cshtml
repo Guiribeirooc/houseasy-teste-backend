@@ -1,0 +1,63 @@
+﻿@model IEnumerable<HouseasyModel.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<form>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Lista - Usuários</h4>
+        </div>
+        <div class="col-md-6 text-end">
+            <button asp-action="Create" title="Criar cadastro" class="btn btn-primary btn-sn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    <hr />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CPF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CPF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Celular)
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button asp-action="Edit" asp-route-id="@item.CPF" title="Editar cadastro" class="btn btn-primary btn-sn">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>

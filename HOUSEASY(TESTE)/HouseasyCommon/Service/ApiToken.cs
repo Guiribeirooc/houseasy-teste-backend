@@ -23,21 +23,21 @@ namespace HouseasyCommon.Service
 
         }
 
-        public async Task<string> Obter()
+        public async Task<string> Get()
         {
             if (_loginResponse.Value.Authenticated == false)
-                await ObterToken();
+                await GetToken();
 
             else
             {
                 if (DateTime.Now >= _loginResponse.Value.ExpirationDate)
-                    await ObterToken();
+                    await GetToken();
             }
 
             return _loginResponse.Value.Token;
         }
 
-        private async Task ObterToken()
+        private async Task GetToken()
         {
             LoginRequest loginRequest = new LoginRequest();
             loginRequest.User = _database.Value.API_USER;

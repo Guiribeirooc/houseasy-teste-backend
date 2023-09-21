@@ -4,6 +4,6 @@ namespace HouseasyBusiness.TokenBusiness
 {
     public interface ITokenBusiness
     {
-        Task<LoginResponse> GerarToken(LoginResponse loginResposta);
+        Task<LoginResponse> GenerateToken(LoginResponse loginResposta);
     }
 }

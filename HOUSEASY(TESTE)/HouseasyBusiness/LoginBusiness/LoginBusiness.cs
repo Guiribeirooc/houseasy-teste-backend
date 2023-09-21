@@ -5,10 +5,10 @@ namespace HouseasyBusiness.LoginBusiness
 {
     public class LoginBusiness : ILoginBusiness
     {
-        private readonly ITokenBusiness _geradorTokenNegocio;
+        private readonly ITokenBusiness _tokenBusiness;
         public LoginBusiness(ITokenBusiness geradorTokenNegocio)
         {
-            _geradorTokenNegocio = geradorTokenNegocio;
+            _tokenBusiness = geradorTokenNegocio;
         }
         public async Task<LoginResponse> Login(LoginRequest loginRequest)
         {
@@ -18,9 +18,9 @@ namespace HouseasyBusiness.LoginBusiness
             loginResponse.Token = "";
             loginResponse.ExpirationDate = null;
 
-            if (loginRequest.User == "UsuarioLocacao" && loginRequest.Password == "SenhaLocacao")
+            if (loginRequest.User == "UserHouseasy" && loginRequest.Password == "PasswordHouseasy")
             {
-                loginResponse = await _geradorTokenNegocio.GerarToken(loginResponse);
+                loginResponse = await _tokenBusiness.GenerateToken(loginResponse);
             }
 
             return loginResponse;

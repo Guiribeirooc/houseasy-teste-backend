@@ -12,7 +12,7 @@ namespace HouseasyBusiness.UserBusiness
             _appDbContext = appDbContext;
         }
 
-        public async Task Alterar(User user)
+        public async Task UpdateUser(User user)
         {
             user.DataAlteracao = DateTime.Now;
 
@@ -20,17 +20,17 @@ namespace HouseasyBusiness.UserBusiness
             await _appDbContext.SaveChangesAsync();
         }
 
-        public async Task Incluir(User user)
+        public async Task IncludeUser(User user)
         {
             await _appDbContext.Users.AddAsync(user);
             await _appDbContext.SaveChangesAsync();
         }
-        public async Task<List<User>> ObterLista()
+        public async Task<List<User>> GetList()
         {
             return await _appDbContext.Users.ToListAsync();
         }
 
-        public async Task<User> ObterPorCPF(string cpf)
+        public async Task<User> GetByCPF(string cpf)
         {
             return await _appDbContext.Users.SingleAsync(x => x.CPF == cpf);
         }
