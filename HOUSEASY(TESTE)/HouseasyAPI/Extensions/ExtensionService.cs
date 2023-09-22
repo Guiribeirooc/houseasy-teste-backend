@@ -27,7 +27,7 @@ namespace HouseasyAPI.Extensions
                 {
                     Title = "API - HOUSEASY",
                     Version = "v1",
-                    Description = "APIs para atender as demandas referente ao Cadastro"
+                    Description = "APIs para atender as demandas referente a Houseasy"
                 });
 
                 c.EnableAnnotations();

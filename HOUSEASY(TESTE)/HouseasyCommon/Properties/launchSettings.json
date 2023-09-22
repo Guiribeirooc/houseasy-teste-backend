@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "HouseasyCommon": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:62857;http://localhost:62860"
+    }
+  }
+}

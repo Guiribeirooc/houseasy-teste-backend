@@ -25,6 +25,7 @@ namespace HouseasyBusiness.UserBusiness
             await _appDbContext.Users.AddAsync(user);
             await _appDbContext.SaveChangesAsync();
         }
+
         public async Task<List<User>> GetList()
         {
             return await _appDbContext.Users.ToListAsync();
@@ -33,6 +34,12 @@ namespace HouseasyBusiness.UserBusiness
         public async Task<User> GetByCPF(string cpf)
         {
             return await _appDbContext.Users.SingleAsync(x => x.CPF == cpf);
+        }
+
+        public async Task RemoveUser(string cpf)
+        {
+            await _appDbContext.Users.Where(x => x.CPF == cpf).ExecuteDeleteAsync();
+            await _appDbContext.SaveChangesAsync();
         }
     }
 }

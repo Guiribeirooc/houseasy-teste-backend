@@ -25,7 +25,7 @@
                     @Html.DisplayNameFor(model => model.Nome)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Ocupação)
+                    @Html.DisplayNameFor(model => model.Ocupacao)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Celular)
@@ -44,20 +44,65 @@
                         @Html.DisplayFor(modelItem => item.Nome)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Ocupação)
+                        @Html.DisplayFor(modelItem => item.Ocupacao)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Celular)
                     </td>
                     <td>
                         <div class="btn-group">
-                            <button asp-action="Edit" asp-route-id="@item.CPF" title="Editar cadastro" class="btn btn-primary btn-sn">
+                            <button asp-action="Edit" asp-route-id="@item.CPF" title="Editar usuário" class="btn btn-primary btn-sn">
                                 <i class="fas fa-edit"></i>
                             </button>
                         </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalExcluir"
+                       data-bs-cpf="@item.CPF" data-bs-nome="@item.Nome"><i class="fa-solid fa-trash"></i></a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
 </form>
+
+<div class="modal fade" id="modalExcluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="bi bi-trash3-fill"></i>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="divModalTexto" class="mb-3"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+
+                @Html.ActionLink("Excluir", "Delete", null, htmlAttributes: new { @class = "btn btn-primary"})
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        var nossaModal = document.getElementById('modalExcluir')
+
+        nossaModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+
+            var cpf = button.getAttribute('data-bs-cpf')
+            var nome = button.getAttribute('data-bs-nome')
+
+            var modalBodyDiv = nossaModal.querySelector('.modal-body div')
+            modalBodyDiv.innerHTML = "Você confirma a exclusão de <b>" + nome + "?</b>"
+                + "<br />Não será possível resgatar este usuário após a confirmação!";
+
+            var modalFooterLink = nossaModal.querySelector('.modal-footer a')
+            modalFooterLink.href = "/Users/Delete?cpf=" + cpf;
+
+        })
+    </script>
+}

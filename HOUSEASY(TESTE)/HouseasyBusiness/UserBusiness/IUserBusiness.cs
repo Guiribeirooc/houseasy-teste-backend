@@ -8,5 +8,6 @@ namespace HouseasyBusiness.UserBusiness
         Task<User> GetByCPF(string cpf);
         Task<List<User>> GetList();
         Task UpdateUser(User cliente);
+        Task RemoveUser(string cpf);
     }
 }

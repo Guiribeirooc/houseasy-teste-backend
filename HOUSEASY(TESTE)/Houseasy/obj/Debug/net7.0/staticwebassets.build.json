@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TbZoYgkKuB3uRF+Ix8uY+pSmgKTj8ykg8yp5p4Hu/II=",
+  "Hash": "1clQtWucLpcbQU/PQiBuWLgjmdIz+PzIVtfAI8kAwK4=",
   "Source": "Houseasy",
   "BasePath": "_content/Houseasy",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\TESTE HOUSEAYSY\\houseasy-teste-backend\\HOUSEASY(TESTE)\\Houseasy\\wwwroot\\js\\CEP.js",
+      "SourceId": "Houseasy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\TESTE HOUSEAYSY\\houseasy-teste-backend\\HOUSEASY(TESTE)\\Houseasy\\wwwroot\\",
+      "BasePath": "_content/Houseasy",
+      "RelativePath": "js/CEP.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\CEP.js"
     },
     {
       "Identity": "C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\TESTE HOUSEAYSY\\houseasy-teste-backend\\HOUSEASY(TESTE)\\Houseasy\\wwwroot\\js\\site.js",

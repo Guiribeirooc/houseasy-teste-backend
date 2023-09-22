@@ -43,5 +43,14 @@ namespace HouseasyAPI.Controllers
             if (ModelState.IsValid)
                 await _userBusiness.UpdateUser(user);
         }
+
+        [HttpDelete]
+        public async Task Remove(string cpf)
+        {
+            if (ModelState.IsValid)
+            {
+                await _userBusiness.RemoveUser(cpf);
+            }
+        }
     }
 }

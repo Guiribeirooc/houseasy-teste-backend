@@ -6,9 +6,9 @@ namespace HouseasyBusiness.LoginBusiness
     public class LoginBusiness : ILoginBusiness
     {
         private readonly ITokenBusiness _tokenBusiness;
-        public LoginBusiness(ITokenBusiness geradorTokenNegocio)
+        public LoginBusiness(ITokenBusiness generateToken)
         {
-            _tokenBusiness = geradorTokenNegocio;
+            _tokenBusiness = generateToken;
         }
         public async Task<LoginResponse> Login(LoginRequest loginRequest)
         {

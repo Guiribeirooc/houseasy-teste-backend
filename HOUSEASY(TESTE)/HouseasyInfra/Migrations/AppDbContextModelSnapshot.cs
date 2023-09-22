@@ -86,7 +86,7 @@ namespace HouseasyInfra.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<string>("Ocupação")
+                    b.Property<string>("Ocupacao")
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 

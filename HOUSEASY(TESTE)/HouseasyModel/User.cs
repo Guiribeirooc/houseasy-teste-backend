@@ -19,7 +19,7 @@ namespace HouseasyModel
         public string? Telefone { get; set; }
 
         [StringLength(30, ErrorMessage = "Este campo é obrigatório.")]
-        public string? Ocupação { get; set; }
+        public string? Ocupacao { get; set; }
 
         [Required(ErrorMessage = "O Celular é obrigatório.")]
         [StringLength(15, MinimumLength = 15, ErrorMessage = "Este campo deve ter 15 Caracteres.")]
