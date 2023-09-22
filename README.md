@@ -1,44 +1,19 @@
-# Teste Vaga Dev Back-end na Houseasy
-Repositório a fim de testar candidatos para vaga de Dev Back-end na Empresa https://houseasy.net/
+# Cadastro de Usuários - Houseasy
 
-| Para esta vaga, buscamos alguém apaixonado por desafios e atento aos detalhes!
+## O que a solução faz?
+A Solução é capaz de inserir, editar e excluir o cadastro de usuários.
 
+## Arquitetura do Projeto
+A solução foi feita em um projeto de Arquitetura de camadas, em .NET, estruturada de forma simples, separando as responsabilidades por camada.
+A aplicação poderá ser executada por completa, backend e frontend, executando os dois projetos em conjunto.
+A API está documentada com Swagger.
 
-  # Instruções a respeito do repositório
-  
-    1 - Faça um Fork deste repositório;
-    2 - Ao terminar, atualize o README.md no seu repositório com as instruções de instalação e como executar o projeto;
-    
-    
-  # Stack
-    
-    - C#
-    
-  # Desafio
-  - Você deve fazer uma API utilizando a linguagem C# e framework .net 6.0.
-    - Essa api deve conter um CRUD de:
-      - Usuários
-      - Endereços
-      - Telefones
-      - Ocupação
-      
-      Utilize boas praticas de programação.
+## Execução do código
+Para executar o teste do código, pode ser utilizado:
+- O próprio Swagger, inicializando o Projeto HouseasyAPI.
+- Projeto completo, executando em conjunto o projeto Houseasy e HouseasyAPI.
 
- 
-# Principais requisitos:
-    1 - Uso de Migrations;
-    2 - Uso de MappingProfiles (DTO para response ou para request);
-    3 - Uso de ContextAPI
+Obs: O projeto está com segurança JWT, onde, se for testar via Swagger será necessário obter o token para poder efetuar os testes. O Login e Senha estão localizados no projeto Houseasy, no appsettings.json. Para executar a migração do banco de dados, o projeto que deverá ser utilizado para isso será o HouseasyInfra, utilizando os comandos "add-migration" e "update-database". Não esqueça de trocar a string de conexão para efetuar o update, que está localizado no projeto HouseasyAPI, no appsettings.json
 
- 
-
-Os diferenciais serão a utilização de técnicas do Clean Code, criação de documentação via sweagger ou postman e containerização do projeto.
-
-                
-           
-   ## Final
-                
-    - Subir o repositório no seu Github e enviar o link com o assunto: Teste Dev. Backend para Carlos Henrique em carlos.souza@houseasy.net
-     e no e-mail, informar do que se trata sua aplicação, com um breve resumo.
-        
+A aplicação está configurada para iniciar na tela Home. Ao clicar em "Usuários, será redirecionado para a view de lista de usuários, onde ao finalizar uma execução, sempre será retornado a esta tela. Nesta tela será possível: cadastrar um novo usuário, alterar os dados do usuário já cadastrado e excluir os dados do mesmo.
         
